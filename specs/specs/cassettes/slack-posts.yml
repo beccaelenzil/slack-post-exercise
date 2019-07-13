@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://slack.com/api//chat.postMessage
+    body:
+      encoding: UTF-8
+      string: token=&text=Hey%20I%20can%20post%20messages%21&channel=testing
+    headers:
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Fri, 12 Jul 2019 22:05:58 GMT
+      Server:
+      - Apache
+      Access-Control-Expose-Headers:
+      - x-slack-req-id, retry-after
+      Access-Control-Allow-Headers:
+      - slack-route, x-slack-version-ts
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Referrer-Policy:
+      - no-referrer
+      X-Accepted-Oauth-Scopes:
+      - chat:write:user
+      Vary:
+      - Accept-Encoding
+      X-Slack-Req-Id:
+      - e16fc7cf-8f70-4267-990d-ba26d495f1b0
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Via:
+      - haproxy-www-0dpy
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 36fbf419b5fa237613e1567ab33d3698.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - SEA19
+      X-Amz-Cf-Id:
+      - TcxHzg-yODE78t5wxa7j2ySz77xMQMl0ZXe88EWmgUHTT0q57vsb-g==
+    body:
+      encoding: UTF-8
+      string: '{"ok":false,"error":"not_authed"}'
+    http_version: 
+  recorded_at: Fri, 12 Jul 2019 22:07:40 GMT
+recorded_with: VCR 5.0.0

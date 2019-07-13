@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://slack.com/api//chat.postMessage
+    body:
+      encoding: UTF-8
+      string: token=SLACK_TOKEN&text=Hey%20I%20can%20post%20messages%21&channel=testing
+    headers:
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Fri, 12 Jul 2019 22:24:51 GMT
+      Server:
+      - Apache
+      X-Content-Type-Options:
+      - nosniff
+      X-Slack-Req-Id:
+      - 0c4402a6-eef1-4239-8d42-a11fc0888c9b
+      X-Oauth-Scopes:
+      - identify,read,post,client,apps
+      Expires:
+      - Mon, 26 Jul 1997 05:00:00 GMT
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Access-Control-Expose-Headers:
+      - x-slack-req-id, retry-after
+      X-Xss-Protection:
+      - '0'
+      X-Accepted-Oauth-Scopes:
+      - chat:write:bot,post
+      Vary:
+      - Accept-Encoding
+      Pragma:
+      - no-cache
+      Access-Control-Allow-Headers:
+      - slack-route, x-slack-version-ts
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Referrer-Policy:
+      - no-referrer
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Via:
+      - haproxy-www-ohm5
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 5afc8eca980390e71a86518c6f90001a.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - SEA19
+      X-Amz-Cf-Id:
+      - lhNmsIErqwEoLXRKlyfrHYtJkOG1THR6huMI5PXkL9OmhG-wrKVacw==
+    body:
+      encoding: UTF-8
+      string: '{"ok":true,"channel":"GLF134RE3","ts":"1562970291.000100","message":{"type":"message","subtype":"bot_message","text":"Hey
+        I can post messages!","ts":"1562970291.000100","username":"Slack API Tester","bot_id":"BLF8Q8FJA"}}'
+    http_version: 
+  recorded_at: Fri, 12 Jul 2019 22:26:32 GMT
+recorded_with: VCR 5.0.0
